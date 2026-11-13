@@ -6,14 +6,34 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 04 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 05 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 06 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 07 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 08 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 09 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 10 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 11 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 02 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 03 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 04 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 05 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 06 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 07 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 08 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 09 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 10 (家宽) - xiaohe",
+        "🇯🇵 日本 (Japan) 11 (家宽) - xiaohe"
       ],
       "url": "https://www.google.com/generate_204"
     },
