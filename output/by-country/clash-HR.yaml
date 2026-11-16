@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇭🇷 HR 01 - xiaohe
   type: vless
-  server: saas.sin.fan
+  server: uspto.gov
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -15,7 +15,7 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEIAgFWVVECBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbBVceSQ==
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwIHBAFUUlMGDB5bQ1ZaXhQDXwFGGgEWQF5DWRtbBVceSQ==
     headers:
       Host: 001-4e8.pages.dev
 - name: 🇭🇷 HR 02 - xiaohe
@@ -34,7 +34,7 @@ proxies:
       Host: 001-4e8.pages.dev
 - name: 🇭🇷 HR 03 - xiaohe
   type: vless
-  server: uspto.gov
+  server: saas.sin.fan
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -43,7 +43,7 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwIHBAFUUlMGDB5bQ1ZaXhQDXwFGGgEWQF5DWRtbBVceSQ==
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEIAgFWVVECBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbBVceSQ==
     headers:
       Host: 001-4e8.pages.dev
 proxy-groups:
