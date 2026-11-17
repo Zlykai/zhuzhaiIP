@@ -4,7 +4,84 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  type: vless
+  server: www.vmware.com
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwUHCAJWV1UFAR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFEaBEg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  type: vless
+  server: www.mfyx.cn
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwMIAQNbXVMLAh5bQ1ZaXhQDXwFGGgEWQF5DWRtbCFoYSQ==
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  type: vless
+  server: spring.io
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwMDCABQVlEADB5bQ1ZaXhQDXwFGGgEWQF5DWRtbCFoYSQ==
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  type: vless
+  server: p.etime.vip
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwUECAtXVFUBBh5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFcaAEg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 06 (家宽) - xiaohe
+  type: vless
+  server: www.leics.police.uk
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwYDAwVSVlELBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFcUAkg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
   type: vless
   server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
   port: 443
@@ -16,9 +93,9 @@ proxies:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
   type: vless
-  server: www.mfyx.cn
+  server: spring.io
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -27,12 +104,12 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEGAgNaV1kBBB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFUYAkg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwIJBQpaVlgDAR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFEVDEg=
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
   type: vless
-  server: cf.877774.xyz
+  server: cdn.204910.best
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -41,24 +118,10 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwQIAgdQUFAKBh5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFsdDEg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEDAwRTXFUCBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbCFoYSQ==
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
-  type: vless
-  server: cf.nyanya.moe
-  port: 443
-  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 001-4e8.pages.dev
-  network: ws
-  ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEBBQRSUlcFBB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFccDUg=
-    headers:
-      Host: 001-4e8.pages.dev
-- name: 🇫🇷 法国 (France) 05 (家宽) - xiaohe
+- name: 🇫🇷 法国 (France) 10 (家宽) - xiaohe
   type: vless
   server: cdn.ctn32.us.kg
   port: 443
@@ -72,9 +135,9 @@ proxies:
     path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwYCBwBTV1EEAB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFUUAEg=
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 11 (家宽) - xiaohe
   type: vless
-  server: p.etime.vip
+  server: www.mfyx.cn
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -83,38 +146,10 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwgIBgRaUFYLAx5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFUbAEg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEGAgNaV1kBBB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFUYAkg=
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇩🇪 德国 (Germany) 07 (家宽) - xiaohe
-  type: vless
-  server: 172.64.88.98
-  port: 443
-  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
-  network: ws
-  ws-opts:
-    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
-    headers:
-      Host: 1v5vp5jsq611a5dsm.pages.dev
-- name: 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  type: vless
-  server: www.vmware.com
-  port: 443
-  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 001-4e8.pages.dev
-  network: ws
-  ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwkJCABVUlEEBR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFYeBUg=
-    headers:
-      Host: 001-4e8.pages.dev
-- name: 🇯🇵 日本 (Japan) 09 (家宽) - xiaohe
+- name: 🇯🇵 日本 (Japan) 12 (家宽) - xiaohe
   type: vless
   server: p.etime.vip
   port: 443
@@ -128,7 +163,7 @@ proxies:
     path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwgICQtSXVkADR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFcfBUg=
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇵🇱 PL 10 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 13 (家宽) - xiaohe
   type: vless
   server: op.chinwa.eu.cc
   port: 443
@@ -139,12 +174,26 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwkEAAJTXFkLDR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFAZAUg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwQGBQVTV1gFBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbCFoYSQ==
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇯🇵 日本 (Japan) 11 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 14 (家宽) - xiaohe
   type: vless
-  server: uspto.gov
+  server: 60.248.219.78
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ty986gfazs.cainiaohub.xyz
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+- name: 🇯🇵 日本 (Japan) 15 (家宽) - xiaohe
+  type: vless
+  server: www.mfyx.cn
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -153,12 +202,12 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEICQRQV1IABx5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFAcBkg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwUJAwRXXFMHBx5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFYYDEg=
     headers:
       Host: 001-4e8.pages.dev
-- name: 🇯🇵 日本 (Japan) 12 (家宽) - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
   type: vless
-  server: www.shopify.com
+  server: www.leics.police.uk
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
@@ -167,7 +216,63 @@ proxies:
   servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwUDAgBVVFUDBh5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFQYBkg=
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwUBBQtUXFkBAB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFsaDUg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 17 (家宽) - xiaohe
+  type: vless
+  server: cdn.ctn32.us.kg
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEDAgpQXVYKBR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFQcAkg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 18 (家宽) - xiaohe
+  type: vless
+  server: cf.nyanya.moe
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEBBQRSUlcFBB5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFccDUg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 19 (家宽) - xiaohe
+  type: vless
+  server: www.vmware.com
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwEGBwNRXVgHDR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFQYAkg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇯🇵 日本 (Japan) 20 (家宽) - xiaohe
+  type: vless
+  server: www.carousell.sg
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwcAAAVUUVYKBR5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFUdB0g=
     headers:
       Host: 001-4e8.pages.dev
 proxy-groups:
@@ -175,34 +280,50 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 07 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 09 (家宽) - xiaohe
-  - 🇵🇱 PL 10 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
+  - 🇫🇷 法国 (France) 10 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 11 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 12 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 13 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 14 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 15 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 17 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 18 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 19 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 20 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 02 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 04 (家宽) - xiaohe
-  - 🇫🇷 法国 (France) 05 (家宽) - xiaohe
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaohe
-  - 🇩🇪 德国 (Germany) 07 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 05 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 06 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 08 (家宽) - xiaohe
-  - 🇯🇵 日本 (Japan) 09 (家宽) - xiaohe
-  - 🇵🇱 PL 10 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 09 (家宽) - xiaohe
+  - 🇫🇷 法国 (France) 10 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 11 (家宽) - xiaohe
   - 🇯🇵 日本 (Japan) 12 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 13 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 14 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 15 (家宽) - xiaohe
+  - 🇰🇷 韩国 (South Korea) 16 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 17 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 18 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 19 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 20 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES

@@ -45,18 +45,33 @@ proxies:
       Host: 152.69.226.63
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaohe
   type: vless
-  server: 152.69.226.63
-  port: 25555
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  server: saas.sin.fan
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: 001-4e8.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwQBAQZaXVkLAx5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFEYBEg=
     headers:
-      Host: 152.69.226.63
+      Host: 001-4e8.pages.dev
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaohe
+  type: vless
+  server: www.dbs.com.sg
+  port: 443
+  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 001-4e8.pages.dev
+  network: ws
+  ws-opts:
+    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwkHBAFTUFUKBh5bQ1ZaXhQDXwFGGgEWQF5DWRtbAFsdBEg=
+    headers:
+      Host: 001-4e8.pages.dev
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -69,7 +84,20 @@ proxies:
     path: /
     headers:
       Host: 152.69.226.63
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaohe
+- name: 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.69.226.63
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaohe
   type: vless
   server: 152.69.226.63
   port: 25555
@@ -93,6 +121,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +134,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 - xiaohe
   - 🇰🇷 韩国 (South Korea) 05 - xiaohe
   - 🇰🇷 韩国 (South Korea) 06 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 07 - xiaohe
+  - 🇰🇷 韩国 (South Korea) 08 - xiaohe
 rules:
 - MATCH,PROXIES
