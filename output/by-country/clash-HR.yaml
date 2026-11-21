@@ -6,20 +6,6 @@ log-level: info
 proxies:
 - name: 🇭🇷 HR 01 - xiaohe
   type: vless
-  server: uspto.gov
-  port: 443
-  uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 001-4e8.pages.dev
-  network: ws
-  ws-opts:
-    path: /video/ThJASkNRG1kPQhdGSA8YEkRCSEsPUA5IFg9AF0BfEx9BFQBBRkdbQVcWA0FbQQoQFA9cX0JFQ1gMVEEXFkMSDwIHBAFUUlMGDB5bQ1ZaXhQDXwFGGgEWQF5DWRtbBVceSQ==
-    headers:
-      Host: 001-4e8.pages.dev
-- name: 🇭🇷 HR 02 - xiaohe
-  type: vless
   server: www.vmware.com
   port: 443
   uuid: 5043349c-1d28-4011-9a1c-45ba0113cea2
@@ -38,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇷 HR 01 - xiaohe
-  - 🇭🇷 HR 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇷 HR 01 - xiaohe
-  - 🇭🇷 HR 02 - xiaohe
 rules:
 - MATCH,PROXIES
